@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_del"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_gravity="bottom"
+    android:layout_weight="80"
+    android:background="#000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="6dip"
+            android:background="#2E2E2E"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="6dip"
+            android:background="#AF1128"
+            android:text="拦截(0)"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

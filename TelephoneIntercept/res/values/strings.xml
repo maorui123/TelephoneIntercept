@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TelephoneIntercept</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">关键服务,监听电话状态,关闭拦截电话将失去作用</string>
+
+</resources>

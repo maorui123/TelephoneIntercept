@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:text="电话拦截"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/bg_color_white_corners" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip" >
+
+                <TextView
+                    android:id="@+id/tv_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_color_white_corners_left"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="已拦截"
+                    android:textColor="@color/bgColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_color_title_corners_right"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="未拦截"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_yes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_weight="2000"
+        android:background="#F7F7F7"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+
+    <ListView
+        android:id="@+id/lv_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:layout_weight="2000"
+        android:background="#F7F7F7"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:visibility="gone" />
+
+    <include layout="@layout/util_del" />
+
+</LinearLayout>
